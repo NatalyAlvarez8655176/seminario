@@ -5,10 +5,6 @@ Template.curso.events({
 
 		Meteor.call('agregarMateria', nombre, Accounts.userId());
 
-	},
-	'click #modal1' :function (e)
-	{
-		e.preventDefault()
-		$('#modal1').modal('open');
 	}
+	
 });

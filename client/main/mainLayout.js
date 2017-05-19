@@ -17,5 +17,8 @@ Template.mainLayout.events({
 	},
 	"click #logout" : function(){
 		Meteor.logout();
-	}
+	},
+	"click #agregarC" : $('#myModal').on('shown.bs.modal', function () {
+  		$('#myInput').focus()
+		})
 });
