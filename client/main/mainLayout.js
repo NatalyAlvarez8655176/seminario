@@ -11,14 +11,12 @@ Template.allCursos.helpers({
 
 Template.mainLayout.events({
 	"click #login" : function(){
-		//console.log("ok")
+		console.log("ok")
 		$(".panelForm").css("opacity",1);
 		FlowRouter.go("/Perfil");
 	},
 	"click #logout" : function(){
 		Meteor.logout();
-	},
-	"click #agregarC" : $('#myModal').on('shown.bs.modal', function () {
-  		$('#myInput').focus()
-		})
+	}
+	
 });
